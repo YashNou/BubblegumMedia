@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bubblegum Media | Commercial Video &amp; Photography — BC, Canada</title>
+  <meta name="description" content="Bubblegum Media is a BC-based commercial video and photography production house. We make brand films, product shoots, and social content — without the stress.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bubblegummedia.ca/" />
+  <meta property="og:title" content="Bubblegum Media | Commercial Video &amp; Photography — BC, Canada">
+  <meta property="og:description" content="BC-based production house making commercial video and photography for brands. Great results, zero stress.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bubblegummedia.ca/">
+  <meta property="og:image" content="https://bubblegummedia.ca/og-image.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bubblegum Media",
+    "description": "Commercial video and photography production house based in British Columbia, Canada.",
+    "url": "https://bubblegummedia.ca",
+    "email": "hello@bubblegummedia.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "areaServed": "British Columbia, Canada"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --pink:       #EC4899;
+      --pink-light: #F9A8D4;
+      --white:      #FFFFFF;
+      --ink:        #141414;
+      --ink-mid:    #555555;
+      --ink-light:  #999999;
+      --border:     rgba(20,20,20,0.1);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #fff;
+      color: var(--ink);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .colour-bar {
+      position: sticky; top: 0; left: 0; right: 0; z-index: 300;
+      height: 8px; width: 100%;
+      background: repeating-linear-gradient(
+        to right,
+        #C0C0C0 0%, #C0C0C0 14.28%,
+        #C0C000 14.28%, #C0C000 28.57%,
+        #00C0C0 28.57%, #00C0C0 42.85%,
+        #00C000 42.85%, #00C000 57.14%,
+        #C000C0 57.14%, #C000C0 71.42%,
+        #C00000 71.42%, #C00000 85.71%,
+        #0000C0 85.71%, #0000C0 100%
+      );
+    }
+    nav.site-nav {
+      position: sticky; top: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; height: 64px; width: 100%;
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .logo {
+      display: flex; align-items: center;
+      text-decoration: none; color: var(--ink);
+      flex-shrink: 0;
+    }
+    .logo:visited, .logo:hover { color: var(--ink); text-decoration: none; }
+    .logo-wordmark {
+      font-size: 1.35rem; font-weight: 600;
+      color: var(--ink); letter-spacing: -0.5px;
+    }
+    .logo-wordmark em { font-style: normal; color: #EC4899; }
+    .nav-links { list-style: none; display: flex; align-items: center; gap: 24px; margin-left: auto; }
+    .nav-links a {
+      font-size: 0.9rem; font-weight: 600;
+      color: var(--ink-mid); text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links .cta {
+      background: #EC4899; color: #fff;
+      padding: 8px 20px; border-radius: 20px;
+      font-weight: 600; font-size: 0.88rem;
+      transition: background 0.2s;
+    }
+    .nav-links .cta:hover { background: var(--ink); color: #fff; }
+    .hero-wrapper { background: #FDF0F6; width: 100%; }
+    .hero {
+      max-width: 1400px; margin: 0 auto;
+      padding: 60px 48px 80px;
+    }
+    .hero-intro {
+      font-size: 0.7rem; font-weight: 500; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--ink-light);
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 6vw, 7rem);
+      line-height: 0.95; font-weight: 500;
+      color: var(--ink); margin-bottom: 40px;
+      letter-spacing: -2px;
+    }
+    h1 em { font-style: italic; color: #EC4899; }
+    .hero-body {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: end;
+      padding-top: 20px; border-top: 1px solid var(--border);
+    }
+    .hero-desc {
+      font-size: 1rem; font-weight: 300;
+      color: var(--ink-mid); line-height: 1.8;
+    }
+    .hero-desc strong { font-weight: 600; color: var(--ink); }
+    .hero-cta-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .hero-sub { font-size: 0.72rem; color: var(--ink-light); text-align: right; }
+    .btn-primary {
+      background: var(--ink); color: #fff;
+      padding: 12px 28px; border-radius: 2px;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.8px;
+      text-decoration: none; display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #EC4899; }
+    .marquee-wrap {
+      overflow: hidden; border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border); padding: 11px 0;
+      cursor: grab;
+      user-select: none;
+    }
+    .marquee-wrap.dragging { cursor: grabbing; }
+    .marquee-track {
+      display: flex; animation: marquee 40s linear infinite; white-space: nowrap;
+    }
+    .marquee-item {
+      display: flex; align-items: center;
+      font-size: 0.68rem; font-weight: 400; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--ink-light); padding: 0 24px;
+    }
+    .marquee-dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: #EC4899; margin-right: 24px; flex-shrink: 0;
+    }
+    .work-section { padding: 80px 0 0; max-width: 1400px; margin: 0 auto; }
+    .work-section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px 28px;
+    }
+    .work-section-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem; font-weight: 500; letter-spacing: -0.5px;
+    }
+    .work-section-header h2 em { font-style: italic; color: #EC4899; }
+    .work-section-header a {
+      font-size: 0.75rem; font-weight: 500; color: var(--ink-light);
+      text-decoration: none; letter-spacing: 0.5px; transition: color 0.15s;
+    }
+    .work-section-header a:hover { color: #EC4899; }
+    .reel-card {
+      width: 100%; aspect-ratio: 16/7; cursor: pointer;
+      background: #0a0a0a;
+      position: relative; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .reel-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(0,0,0,0.15); transition: background 0.3s;
+    }
+    .reel-card:hover::after { background: rgba(0,0,0,0.05); }
+    .reel-play {
+      width: 64px; height: 64px;
+      border: 1.5px solid rgba(255,255,255,0.7); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.2rem; z-index: 1;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .reel-card:hover .reel-play { background: #EC4899; border-color: #EC4899; }
+    .reel-label {
+      position: absolute; bottom: 24px; left: 36px; z-index: 1;
+    }
+    .reel-label h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 500; color: white; letter-spacing: -0.2px;
+    }
+    .reel-label p {
+      font-size: 0.65rem; font-weight: 400; letter-spacing: 1.5px;
+      text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 3px;
+    }
+    .reel-tag {
+      position: absolute; top: 24px; right: 36px; z-index: 1;
+      font-size: 0.6rem; font-weight: 500; letter-spacing: 1.5px;
+      text-transform: uppercase; color: rgba(255,255,255,0.45);
+      border: 1px solid rgba(255,255,255,0.2); padding: 3px 10px;
+    }
+    .work-grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px; background: #e8e8e8; margin-top: 2px;
+    }
+    .work-card {
+      position: relative; overflow: hidden;
+      aspect-ratio: 4/3; cursor: pointer;
+    }
+    .work-card:nth-child(1),
+    .work-card:nth-child(2),
+    .work-card:nth-child(3),
+    .work-card:nth-child(4),
+    .work-card:nth-child(5),
+    .work-card:nth-child(6) { background: #0a0a0a; }
+    .work-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%);
+      padding: 20px; display: flex; flex-direction: column; justify-content: flex-end;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .work-card:hover .work-card-overlay { opacity: 1; }
+    .work-card-overlay h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 500; color: white; margin-bottom: 3px;
+    }
+    .work-card-overlay p {
+      font-size: 0.62rem; font-weight: 400; letter-spacing: 1.5px;
+      text-transform: uppercase; color: rgba(255,255,255,0.5);
+    }
+    .work-card-tag {
+      position: absolute; top: 12px; left: 12px;
+      font-size: 0.58rem; font-weight: 500; letter-spacing: 1.2px;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+      border: 1px solid rgba(255,255,255,0.15); padding: 2px 8px;
+    }
+    .statement {
+      padding: 100px 48px; max-width: 1400px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+      border-top: 1px solid var(--border);
+    }
+    .statement h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3.5rem);
+      font-weight: 500; line-height: 1.15; letter-spacing: -0.5px;
+    }
+    .statement h2 em { font-style: italic; color: #EC4899; }
+    .statement-body { display: flex; flex-direction: column; gap: 18px; }
+    .statement-body p {
+      font-size: 0.92rem; font-weight: 300;
+      color: var(--ink-mid); line-height: 1.8;
+    }
+    .statement-body p strong { font-weight: 500; color: var(--ink); }
+    .statement-body a {
+      font-size: 0.75rem; font-weight: 500; color: var(--ink);
+      text-decoration: none; border-bottom: 1px solid var(--border);
+      padding-bottom: 3px; align-self: flex-start; transition: color 0.2s, border-color 0.2s;
+    }
+    .statement-body a:hover { color: #EC4899; border-color: #EC4899; }
+    .services { padding: 0 48px 100px; max-width: 1400px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--ink-light);
+      margin-bottom: 48px; display: flex; align-items: center; gap: 16px;
+    }
+    .section-label::before { content: ''; width: 32px; height: 1px; background: var(--ink-light); }
+    .services-list {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--border); border-left: 1px solid var(--border);
+    }
+    .service-item {
+      padding: 36px 28px;
+      border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      transition: background 0.3s; position: relative;
+      overflow: hidden; min-height: 280px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      background-size: cover; background-position: center;
+    }
+    .service-item::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.82) 40%, rgba(0,0,0,0.4) 100%);
+      transition: background 0.3s; z-index: 0;
+    }
+    .service-item:hover::before {
+      background: linear-gradient(to top, rgba(0,0,0,0.92) 40%, rgba(0,0,0,0.6) 100%);
+    }
+    .service-item::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; background: #EC4899;
+      transform: scaleX(0); transition: transform 0.3s; transform-origin: left; z-index: 2;
+    }
+    .service-item:hover::after { transform: scaleX(1); }
+    .service-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem; font-weight: 500;
+      color: rgba(255,255,255,0.15); margin-bottom: 16px; line-height: 1;
+      position: relative; z-index: 1;
+    }
+    .service-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 500; margin-bottom: 8px; letter-spacing: -0.2px;
+      color: #fff; position: relative; z-index: 1;
+    }
+    .service-item p { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.75; font-weight: 300; position: relative; z-index: 1; }
+    .closer {
+      background: #141414; padding: 90px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 48px; flex-wrap: wrap;
+    }
+    .closer h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+      font-weight: 500; color: white; letter-spacing: -0.5px; line-height: 1.15;
+    }
+    .closer h2 em { font-style: italic; color: #F9A8D4; }
+    .btn-light {
+      background: white; color: #141414;
+      padding: 12px 28px; border-radius: 2px;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.8px;
+      text-decoration: none; flex-shrink: 0; transition: background 0.2s, color 0.2s;
+    }
+    .btn-light:hover { background: #EC4899; color: white; }
+    .contact-section {
+      padding: 100px 48px; max-width: 1400px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.3fr;
+      gap: 80px; border-top: 1px solid var(--border);
+    }
+    .contact-left h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 3.2rem);
+      font-weight: 500; line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 16px;
+    }
+    .contact-left h2 em { font-style: italic; color: #EC4899; }
+    .contact-left p {
+      font-size: 0.88rem; font-weight: 300; color: var(--ink-mid);
+      line-height: 1.8; margin-bottom: 32px;
+    }
+    .contact-details { display: flex; flex-direction: column; gap: 10px; }
+    .contact-details span {
+      font-size: 0.8rem; color: var(--ink-light);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .contact-details span::before {
+      content: ''; width: 16px; height: 1px; background: #EC4899; flex-shrink: 0;
+    }
+    .contact-form { display: flex; flex-direction: column; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; }
+    .form-group {
+      display: flex; flex-direction: column;
+      border-bottom: 1px solid var(--border); border-right: 1px solid var(--border);
+    }
+    .form-group.full { grid-column: 1 / -1; border-right: 1px solid var(--border); }
+    .form-row:first-child .form-group { border-top: 1px solid var(--border); }
+    .form-group:nth-child(odd) { border-left: 1px solid var(--border); }
+    .form-group.full { border-left: 1px solid var(--border); }
+    .form-group label {
+      font-size: 0.6rem; font-weight: 500; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--ink-light); padding: 14px 16px 4px;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      padding: 0 16px 12px; border: none; background: transparent;
+      font-family: 'DM Sans', sans-serif; font-size: 0.88rem; font-weight: 300;
+      color: var(--ink); outline: none; resize: none;
+    }
+    .form-group textarea { min-height: 100px; padding-top: 4px; }
+    .form-group:focus-within { background: #FDF0F6; }
+    .form-group:focus-within label { color: #EC4899; }
+    .form-submit { padding-top: 24px; }
+    .form-submit button {
+      background: #141414; color: white; border: none;
+      padding: 13px 32px; font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 1.5px;
+      text-transform: uppercase; cursor: pointer; border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .form-submit button:hover { background: #EC4899; }
+    .colour-bar-bottom {
+      height: 8px;
+      background: repeating-linear-gradient(
+        to right,
+        #C0C0C0 0%, #C0C0C0 14.28%,
+        #C0C000 14.28%, #C0C000 28.57%,
+        #00C0C0 28.57%, #00C0C0 42.85%,
+        #00C000 42.85%, #00C000 57.14%,
+        #C000C0 57.14%, #C000C0 71.42%,
+        #C00000 71.42%, #C00000 85.71%,
+        #0000C0 85.71%, #0000C0 100%
+      );
+    }
+    footer {
+      background: #141414; padding: 40px 48px;
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 20px;
+    }
+    .footer-logo {
+      font-size: 1.35rem; font-weight: 600;
+      color: rgba(255,255,255,0.3);
+    }
+    .footer-logo em { font-style: normal; color: #F9A8D4; }
+    footer nav ul { list-style: none; display: flex; gap: 28px; }
+    footer nav ul a {
+      font-size: 0.72rem; font-weight: 400; color: rgba(255,255,255,0.25);
+      text-decoration: none; transition: color 0.15s;
+    }
+    footer nav ul a:hover { color: rgba(255,255,255,0.6); }
+    footer p { font-size: 0.68rem; color: rgba(255,255,255,0.15); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes wobble {
+      0%, 100% { transform: rotate(-2deg) scale(1); }
+      50%       { transform: rotate(2deg) scale(1.05); }
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    @media (max-width: 960px) {
+      nav.site-nav { padding: 0 20px; }
+      .hero { padding: 40px 24px 60px; }
+      h1 { letter-spacing: -1px; }
+      .hero-body { grid-template-columns: 1fr; gap: 24px; }
+      .hero-cta-wrap { align-items: flex-start; }
+      .hero-sub { text-align: left; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
+      .statement { padding: 80px 24px; grid-template-columns: 1fr; gap: 40px; }
+      .services { padding: 0 24px 80px; }
+      .services-list { grid-template-columns: 1fr 1fr; }
+      .closer { padding: 80px 24px; }
+      .contact-section { padding: 80px 24px; grid-template-columns: 1fr; gap: 48px; }
+      footer { padding: 32px 24px; }
+    }
+    @media (max-width: 600px) {
+      .nav-links li:not(:last-child) { display: none; }
+      .work-grid { grid-template-columns: 1fr; }
+      .services-list { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-group { border-right: 1px solid var(--border) !important; }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+    .reveal-delay-4 { transition-delay: 0.32s; }
+    .reveal-delay-5 { transition-delay: 0.40s; }
+    .reveal-delay-6 { transition-delay: 0.48s; }
+  </style>
+</head>
+<body>
+
+  <div class="colour-bar"></div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="logo">
+      <span class="logo-wordmark">bubblegum<em>media</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="portfolio.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="cta">Get in touch</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-wrapper">
+  <section class="hero">
+    <div class="hero-intro reveal">BC, Canada · Commercial Video & Photo</div>
+    <h1 class="reveal reveal-delay-1">We make<br>video that<br><em>moves people.</em></h1>
+    <div class="hero-body reveal reveal-delay-2">
+      <p class="hero-desc">
+        Commercial video and photography for brands that take their work seriously.
+        <strong>We handle everything</strong> — concept, production, post — so you can focus on running your business.
+      </p>
+      <div class="hero-cta-wrap">
+        <a href="portfolio.html" class="btn-primary">See our work</a>
+        <span class="hero-sub">Based in BC. Shooting everywhere.</span>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Commercial Video</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Photography</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Post Production</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Creative Direction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Colour Grading</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Motion Graphics</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Sound Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Commercial Video</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Photography</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Post Production</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Creative Direction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Colour Grading</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Motion Graphics</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Sound Design</div>
+    </div>
+  </div>
+
+  <section class="work-section">
+    <div class="work-section-header reveal">
+      <h2>Featured <em>work</em></h2>
+      <a href="portfolio.html">View all →</a>
+    </div>
+    <div class="reel-card reveal">
+      <div class="reel-tag">Showreel 2025</div>
+      <div class="reel-play">▶</div>
+      <div class="reel-label">
+        <h3>Bubblegum Media — The Reel</h3>
+        <p>Everything we've been up to</p>
+      </div>
+    </div>
+    <div class="work-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="work-card reveal reveal-delay-1">
+        <div class="work-card-tag">Video</div>
+        <div class="work-card-overlay">
+          <h4>Brand Campaign — Client A</h4>
+          <p>Commercial · 60 sec</p>
+        </div>
+      </div>
+      <div class="work-card reveal reveal-delay-2">
+        <div class="work-card-tag">Photo</div>
+        <div class="work-card-overlay">
+          <h4>Product Shoot — Client B</h4>
+          <p>Commercial Photography</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement reveal">
+    <h2>Your product is great.<br>Let's make sure<br>the world <em>knows it.</em></h2>
+    <div class="statement-body">
+      <p>
+        We're not just camera operators. We dig into what makes your brand tick and build content around that. From the first call to the final deliverable, we keep things <strong>clear, collaborative, and actually enjoyable.</strong>
+      </p>
+      <p>
+        Based in BC but we go where the work is. We've shot everything from product launches to brand documentaries — and we bring the same energy to every project.
+      </p>
+      <a href="about.html">More about us →</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services-list">
+      <div class="service-item reveal reveal-delay-1" style="background-image: url('https://images.unsplash.com/photo-1579622564872-8deae6c7e857?w=800&q=80');">
+        <div class="service-num">01</div>
+        <h3>Commercial Video</h3>
+        <p>Brand films, ads, product demos, and social content that converts.</p>
+      </div>
+      <div class="service-item reveal reveal-delay-2" style="background-image: url('https://images.unsplash.com/photo-1542038374-c0e78cd3fd1a?w=800&q=80');">
+        <div class="service-num">02</div>
+        <h3>Commercial Photo</h3>
+        <p>Product, lifestyle, and editorial photography that makes brands pop.</p>
+      </div>
+      <div class="service-item reveal reveal-delay-3" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80');">
+        <div class="service-num">03</div>
+        <h3>Post-Production</h3>
+        <p>Colour grading, editing, motion graphics, and sound under one roof.</p>
+      </div>
+      <div class="service-item reveal reveal-delay-4" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80');">
+        <div class="service-num">04</div>
+        <h3>Creative Direction</h3>
+        <p>We shape the story, not just shoot it. From concept to final cut.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="closer">
+    <h2>Ready to make something<br>you're actually <em>proud of?</em></h2>
+    <a href="contact.html" class="btn-light">Get in touch</a>
+  </div>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-left reveal">
+      <h2>Let's talk about<br>your <em>project.</em></h2>
+      <p>No pressure, no pitch deck. Just a conversation about what you're building and whether we're the right fit.</p>
+      <div class="contact-details">
+        <span>British Columbia, Canada</span>
+        <span>hello@bubblegummedia.ca</span>
+        <span>Back to you within 24 hours</span>
+      </div>
+    </div>
+    <div class="contact-right reveal reveal-delay-2">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" placeholder="Acme Co." />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="jane@acme.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full">
+            <label>Tell us about it *</label>
+            <textarea placeholder="What are you working on? Deadlines? Vibe? The more you share, the better." required></textarea>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit">Send it over</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="colour-bar-bottom"></div>
+  <footer>
+    <div class="footer-logo">bubblegum<em>media</em></div>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p>© 2025 Bubblegum Media. BC, Canada.</p>
+  </footer>
+
+  <script>
+    // Reveal observer
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -35% 0px' });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Marquee drag
+    (function () {
+      const track    = document.querySelector('.marquee-track');
+      const wrap     = document.querySelector('.marquee-wrap');
+      const DURATION = 40;
+
+      let dragging      = false;
+      let startPointerX = 0;
+      let pausedAtX     = 0;
+
+      function getComputedX() {
+        return new DOMMatrix(window.getComputedStyle(track).transform).m41;
+      }
+
+      function pause() {
+        pausedAtX = getComputedX();
+        track.style.animation = 'none';
+        track.style.transform = `translateX(${pausedAtX}px)`;
+      }
+
+      function resume(fromPx) {
+        const half = track.scrollWidth / 2;
+        // Normalise into [-half, 0) so it maps to a valid point in the loop
+        let x = fromPx % half;
+        if (x > 0) x -= half;   // dragged right past origin → wrap to equivalent negative
+        const progress = Math.abs(x) / half; // 0..1
+        // Remove inline transform, force reflow, then restart animation from correct offset
+        track.style.transform = '';
+        void track.offsetWidth;
+        track.style.animation = `marquee ${DURATION}s linear ${-(progress * DURATION)}s infinite`;
+      }
+
+      function onStart(e) {
+        dragging = true;
+        startPointerX = e.touches ? e.touches[0].clientX : e.clientX;
+        pause();
+        wrap.classList.add('dragging');
+        e.preventDefault();
+      }
+
+      function onMove(e) {
+        if (!dragging) return;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        track.style.transform = `translateX(${pausedAtX + (clientX - startPointerX)}px)`;
+      }
+
+      function onEnd() {
+        if (!dragging) return;
+        dragging = false;
+        wrap.classList.remove('dragging');
+        resume(getComputedX());
+      }
+
+      wrap.addEventListener('mousedown',  onStart);
+      wrap.addEventListener('touchstart', onStart, { passive: false });
+      window.addEventListener('mousemove',  onMove);
+      window.addEventListener('touchmove',  onMove, { passive: false });
+      window.addEventListener('mouseup',  onEnd);
+      window.addEventListener('touchend', onEnd);
+    })();
+  </script>
+
+</body>
+</html>
